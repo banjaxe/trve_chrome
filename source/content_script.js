@@ -31,12 +31,12 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bu\b/g, "v");
-	v = v.replace(/\b!\b/g, "! \m/");
 	v = v.replace(/\bgod\b/g, "Satan");
 	v = v.replace(/\bGod\b/g, "Satan");
 	v = v.replace(/\bjesus\b/g, "Lemmy");
 	v = v.replace(/\bJesus\b/g, "Lemmy");
+	v = v.replace(/\bTrue\b/g, "Trve");
+	v = v.replace(/\btrue\b/g, "trve");
 	
 	textNode.nodeValue = v;
 }
